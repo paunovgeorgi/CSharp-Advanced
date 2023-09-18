@@ -7,7 +7,7 @@ int squareCount = 0;
 for (int row = 0; row < rows; row++)
 {
     char[] data = Console.ReadLine().Split().Select(char.Parse).ToArray();
-
+    
     for (int col = 0; col < cols; col++)
     {
         matrix[row, col] = data[col];
@@ -26,6 +26,7 @@ for (int row = 0; row < rows - 1; row++)
 }
 
 Console.WriteLine(squareCount);
+
 bool IsEqual(char[,] chars, int row, int col)
 {
     return chars[row, col] == chars[row, col + 1] && chars[row, col] == chars[row + 1, col] &&
