@@ -6,7 +6,7 @@ int squareCount = 0;
 
 for (int row = 0; row < rows; row++)
 {
-    char[] data = Console.ReadLine().Split().Select(char.Parse).ToArray();
+    char[] data = Console.ReadLine().Split(" ", StringSplitOptions.RemoveEmptyEntries).Select(char.Parse).ToArray();
     
     for (int col = 0; col < cols; col++)
     {
